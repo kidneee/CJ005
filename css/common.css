@@ -25,8 +25,11 @@ span {
 
 .list__item {
   padding-bottom: 5px;
-  margin-bottom: 6px;
   border-bottom: 1px dotted #ccc;
+}
+
+.list__item:not(:last-of-type) {
+  margin-bottom: 6px;
 }
 
 ::marker {
@@ -53,10 +56,20 @@ span {
   width: 100%;
   margin-bottom: 60px;
 }
+@media screen and (max-width: 834px) {
+  .recipe__inner {
+    grid-template-columns: 1fr;
+  }
+}
 
 .recipe__left {
   height: 700px;
   object-fit: cover;
+}
+@media screen and (max-width: 834px) {
+  .recipe__left {
+    height: auto;
+  }
 }
 
 .recipe__image {
@@ -67,6 +80,11 @@ span {
 
 .recipe__right {
   padding: 40px 10% 0;
+}
+@media screen and (max-width: 834px) {
+  .recipe__right {
+    padding: 40px 5% 0;
+  }
 }
 
 .recipe__title {
@@ -87,7 +105,7 @@ span {
   color: #2b2a27;
   font-size: 14px;
   border: 1px solid #000;
-  padding: 18px 60px;
+  padding: 17px 59px;
 }
 
 /* material */
