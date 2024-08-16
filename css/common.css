@@ -10,21 +10,70 @@ span {
   display: block;
 }
 
-.recipe__sub-title {
-  font-size: 20px;
-  font-weight: 600;
+.sub-section {
+  font-size: 16px;
 }
 
+.recipe__sub-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 21px;
+}
+
+.list__item {
+  line-height: 1.125;
+  padding-bottom: 6px;
+  margin-bottom: 6px;
+}
+
+/* wrapper */
+
 /* main */
+.main {
+  margin-bottom: 100px;
+}
+
 /* recipe */
-.recipe__inner {
+.recipe {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recipe__inner {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.recipe__left {
+  height: 700px;
+  object-fit: cover;
+}
+
+.recipe__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.recipe__right {
+  padding: 40px 5% 0;
 }
 
 .recipe__title {
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.71;
+  margin-bottom: 20px;
+}
+
+.recipe__desc {
+  line-height: 1.5;
+  margin-bottom: 40px;
 }
 
 .recipe__link {
@@ -37,12 +86,26 @@ span {
 }
 
 /* material */
-.material__list .list__item {
+.material {
+  margin-bottom: 40px;
+}
+
+.material .list__item {
   display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+}
+
+/* method */
+.method .list__item {
+  border-bottom: 1px solid #ccc;
 }
 
 /* footer */
 .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 12px;
   margin-bottom: 20px;
 }
