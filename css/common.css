@@ -12,20 +12,25 @@ span {
 
 .sub-section {
   font-size: 16px;
+  line-height: 1.15;
 }
 
 .recipe__sub-title {
   font-size: 20px;
   font-weight: 700;
-  line-height: 1.5;
   border-bottom: 1px solid #ccc;
-  margin-bottom: 21px;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 .list__item {
-  line-height: 1.125;
-  padding-bottom: 6px;
+  padding-bottom: 5px;
   margin-bottom: 6px;
+  border-bottom: 1px dotted #ccc;
+}
+
+::marker {
+  border-bottom: none;
 }
 
 /* wrapper */
@@ -61,13 +66,13 @@ span {
 }
 
 .recipe__right {
-  padding: 40px 5% 0;
+  padding: 40px 10% 0;
 }
 
 .recipe__title {
   font-size: 28px;
   font-weight: 700;
-  line-height: 1.71;
+  line-height: 1.714;
   margin-bottom: 20px;
 }
 
@@ -93,12 +98,11 @@ span {
 .material .list__item {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #ccc;
 }
 
 /* method */
-.method .list__item {
-  border-bottom: 1px solid #ccc;
+.method__list {
+  padding-left: 1em;
 }
 
 /* footer */
