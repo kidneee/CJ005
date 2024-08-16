@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/* 共通 */
+body {
+  font-family: 'Helvetica Neue', Arial, 'Hiragino Sans', Meiryo, sans-serif;
+}
+
+span {
+  display: block;
+}
