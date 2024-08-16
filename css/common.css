@@ -3,8 +3,31 @@
 /* 共通 */
 body {
   font-family: 'Helvetica Neue', Arial, 'Hiragino Sans', Meiryo, sans-serif;
+  color: #2b2a27;
 }
 
 span {
   display: block;
+}
+
+.recipe__sub-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* main */
+/* recipe */
+.recipe__inner {
+  display: flex;
+}
+
+.recipe__title {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.71;
+}
+
+/* material */
+.material__list .list__item {
+  display: flex;
 }
